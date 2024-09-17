@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mostrar() {
+            alert("teste");
+            var conteudo = document.getElementById('conteudo');
+            conteudo.innerHTML = "tEXTO dIFENTE"
+            conteudo.style.color = "black";
+            conteudo.style.backgroundColor = "yellow";
+        }
+
+        function mudarCor(){
+            var conteudo = document.getElementById('conteudo');
+            conteudo.style.color = "red";
+            conteudo.style.backgroundColor = "green";
+        }
+
+        function voltarCor(){
+            conteudo.style.color = "green";
+            conteudo.style.backgroundColor = "red";
+        }
+        
+    </script>
+</head>
+
+<body>
+
+    <h1>Exemplo JavaScript!</h1>
+    <p id="conteudo" onmouseover="mudarCor(this)" onmouseover="voltarCor(this)">Texto qualquer</p>
+    <button onclick="mostrar()">Clique aqui</button>
+
+
+</body>
+
+</html>
